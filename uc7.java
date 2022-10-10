@@ -1,14 +1,13 @@
 package com.bridgelabday4;
 
-public class uc6 {
+public class uc7 {
     public static final int IS_FULL_TIME = 2;
     public static final int IS_PART_TIME=1;
     public static final int EMP_RATE_PER_HOUR = 20;
     public static final int NUM_OF_WORKING_DAYS=2;
     public static final int MAX_HRS_IN_MONTH = 10;
 
-
-    public static void main(String[] args) {
+public static int computeEmpwage(){
         int emphrs=0,totalemphrs=0, totalworkingdays=0;
         while(totalemphrs<=MAX_HRS_IN_MONTH &&totalworkingdays<NUM_OF_WORKING_DAYS){
             totalworkingdays++;
@@ -28,10 +27,17 @@ public class uc6 {
             System.out.println("Day#:"+totalworkingdays+"emphrs:"+emphrs);
             System.out.println("empwage:");
         }
-        int total=totalemphrs= totalemphrs*EMP_RATE_PER_HOUR;
-        System.out.println("Total :" +total );
+        int totalEmpwage=totalemphrs*EMP_RATE_PER_HOUR;
+        System.out.println("Total Emp wage:"+totalEmpwage);
+        return totalEmpwage;
+    }
+
+    public static void main(String[] args) {
+        computeEmpwage();
     }
 
 }
+
+
 
 
